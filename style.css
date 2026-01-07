@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #2c2c2c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 650px;
+    background: #161616;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.wrapper h1 img {
+    width: 55px;
+    vertical-align: -15px;
+}
+
+.taskList ul {
+    text-align: left;
+}
+
+.taskList ul li {
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;           /* important to respect container */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.taskList ul li span {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-right: 10px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.act-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.act-wrapper input {
+    width: 100%;
+    padding: 0 20px;
+    height: 70px;
+    font-size: 23px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.act-wrapper input:focus {
+    outline: none;
+}
+
+.act-wrapper button {
+    font-size: 25px;
+    padding: 0 10px;
+    width: 25%;
+    height: 70px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #2c2c2c;
+    font-weight: 700;
+    cursor: pointer;
+    color: #FFF;
+    transition: background 0.2s ease;
+}
+
+.act-wrapper button:hover {
+    background: hsl(0, 0%, 25%);
+}
+
+.act-wrapper button:active {
+    background: hsl(0, 0%, 35%);
+
+}
+
+.taskList ul li button {
+    font-size: 25px;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: transparent;
+    color: hsl(0, 0%, 30%);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.taskList ul li button:hover {
+    background: hsl(0, 0%, 40%);
+}
+
+.taskList ul li button:active {
+    background: hsl(0, 0%, 50%);
+}
+
+.taskList ul li span.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
